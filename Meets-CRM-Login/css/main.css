@@ -1,0 +1,92 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1FBEF8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.area-form {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #191919;
+    color: #fff;
+    padding: 50px;
+}
+
+.cadastro p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.cadastro button {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    background: #1FBEF8;
+    color: #fff;
+    padding: 14px 19px;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.acesso {
+    background: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acesso input[type=email],
+.acesso input[type=password] {
+    max-width: 100%;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 2px;
+    background: #eee;
+}
+
+.acesso input[type=submit] {
+    padding: 14px 35px;
+    background: #1FBEF8;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.acesso a {
+    text-decoration: none;
+    color: #191919;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #191919;
+    padding-left: 5px;
+}

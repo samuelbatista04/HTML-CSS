@@ -1,0 +1,164 @@
+/* CSS Reset */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Fim CSS Reset */
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    height: 100vh;
+    background: no-repeat linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1A1A1A;
+    /* background: #fafafa; */
+    width: 350px;
+    height: 600px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Logo */
+.s-conteudo img {
+    width: 150px;
+    padding: 10px 0;
+}
+
+/* Fomulário */
+.s-conteudo form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    max-width: 100%;
+}
+
+.s-conteudo input {
+    height: 36px;
+    padding: 9px 0px 7px 8px;
+    margin-top: 8px;
+    font-size: 0.875em;
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+
+.s-conteudo button {
+    margin: 8px 0px;
+    background: #0095f6;
+    color: #fff;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #222;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Separador */
+.separador {
+    text-align: center;
+    color: #CCC;
+    margin: 20px;
+}
+
+.separador::after,
+.separador::before {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background: rgba(204, 204, 204, 0.295);
+    margin: 3px 10px;
+}
+
+/* Textos */
+
+.pos-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pos-formulario--fb {
+    display: flex;
+    align-items: center;
+}
+
+.pos-formulario--fb img {
+    width: 16px;
+    margin-right: 8px;
+}
+
+.pos-formulario--fb>a {
+    font-weight: bold;
+    color: #385185;
+}
+
+.pos-formulario>a {
+    font-size: 0.75em;
+    color: #fff;
+    font-weight: 100;
+    margin-top: 12px;
+}
+
+/* Cadastro */
+.pos-formulario--cadastro {
+    display: flex;
+    margin: 30px 0;
+}
+
+.pos-formulario--cadastro p {
+    padding-right: 8px;
+    color: #FFF;
+    font-weight: 100;
+    font-size: 0.875em;
+}
+
+.pos-formulario--cadastro a {
+    color: #fff;
+}
+
+.pos-formulario p {
+    color: #fff;
+    font-size: 0.875em;
+}
+
+.baixe-apps {
+    display: flex;
+}
+
+.baixe-apps img {
+    padding: 10px;
+}

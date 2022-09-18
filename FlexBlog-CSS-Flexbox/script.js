@@ -1,0 +1,1 @@
+console.log('Me dê Forças pra aprender cada vez mais senhor meu Deus');
