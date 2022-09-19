@@ -1,7 +1,7 @@
 # HTML-CSS
 
-Nesse Repositorio esta todos os projetos e paginas que desenvolvo com HTML e CSS.<br>
-Em meus projetos, procuro sempre aperfeiçoar da melhor forma possivel minhas habilidades em UI/UX Design.<br>
+Nesse Repositório esta todos os projetos e paginas que desenvolvo com HTML e CSS.<br>
+Em meus projetos, procuro sempre aperfeiçoar da melhor forma possível minhas habilidades em UI/UX Design.<br>
 Nesses projetos, uso HTML e CSS Flexbox.
 <br>
 # Contatos:
