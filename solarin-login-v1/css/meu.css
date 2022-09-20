@@ -121,6 +121,7 @@ body {
 }
 
 .social-icons {
+    flex: 1;
     display: flex;
     flex-direction: row;
     align-self: center;
@@ -136,6 +137,7 @@ body {
 }
 
 .rodape>a {
+    flex: 1;
     color: #f6f6f6;
     font-size: 0.85em;
 }
