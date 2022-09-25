@@ -79,7 +79,6 @@ body {
     background: #84fab0;
 }
 
-
-
+.col_2 input {}
 
 @media (max-width: 739px) {}
