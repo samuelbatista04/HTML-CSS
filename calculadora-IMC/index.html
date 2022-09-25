@@ -14,17 +14,25 @@
 </head>
 
 <body>
-    <section class="calc">
+    <section class="container">
         <header class="col_1">
             <a href="#"><img src="img/saude.png" alt="Logo Ícone"></a>
             <h1>Calculadora IMC</h1>
         </header>
         <section class="col_2">
             <form action="">
-                <input placeholder="Informe o seu nome" type="text" name="nome" id="nome">
-                <input placeholder="Informe a sua altura" type="number" name="altura" id="altura">
-                <input placeholder="Informe o seu peso" type="number" name="peso" id="peso">
-                <button type="submit">Calcular seu IMC</button>
+                <div>
+                    <input placeholder="Informe o seu nome" type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <input placeholder="Informe a sua altura" type="number" name="altura" id="altura">
+                </div>
+                <div>
+                    <input placeholder="Informe o seu peso" type="number" name="peso" id="peso">
+                </div>
+                <div class="btn">
+                    <input type="button" value="Calcular seu IMC">
+                </div>
             </form>
         </section>
 
