@@ -95,9 +95,17 @@ body {
     margin-bottom: 20px;
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
 .btn input {
-    width: 100%;
-    padding: 0 80px;
+    flex: 1;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
     background: #0ca845;
     color: #fff;
     font-size: 1em;
@@ -143,8 +151,14 @@ body {
 }
 
 @media (max-width: 739px) {
+    .btn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .btn input {
-        width: 100%;
-        padding: 0 20px;
+        width: 50%;
+        padding: 10px;
     }
 }

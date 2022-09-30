@@ -1,5 +1,4 @@
-
-const calcular = document.getElementById('calcular')
+const btnCalcular = document.getElementById('calcular')
 
 function imc() {
     const nome = document.getElementById('nome').value
@@ -8,30 +7,34 @@ function imc() {
     const resultado = document.getElementById('resultado')
 
     if (nome !== '' && altura !== '' && peso !== '') {
+        let calculo = (peso / (altura * altura)).toFixed(1)
 
-        const valorIMC = (peso / (altura * altura)).toFixed(1)
+        classificacao = ''
 
-        let classificacao = ''
-
-        if (valorIMC < 18.5) {
-            classificacao = 'você esta abaixo do peso'
-        } else if (valorIMC < 25) {
-            classificacao = 'você esta com o peso ideal. Parabéns'
-        } else if (valorIMC < 30) {
-            classificacao = 'você esta levemente acima do peso'
-        } else if (valorIMC < 35) {
-            classificacao = 'você esta com obesidade grau I'
-        } else if (valorIMC < 40) {
-            classificacao = 'voce esta com obesidade grau II'
-        } else if (valorIMC >= 40) {
-            classificacao = 'voce esta com obesidade grau III. Cuidado!!'
+        if (calculo < 18.5) {
+            classificacao = 'Magreza'
+        } else if (calculo < 24.9) {
+            classificacao = 'Normal'
+        } else if (calculo < 29.9) {
+            classificacao = 'Sobrepeso'
+        } else if (calculo < 34.9) {
+            classificacao = 'Obesidade grau I'
+        } else if (calculo < 39.9) {
+            classificacao = 'Obesidade grau II'
+        } else {
+            classificacao = 'Obesidade grau III'
         }
 
-        resultado.textContent = `${nome} seu IMC é ${valorIMC}, ${classificacao}`
-
+        resultado.innerHTML = `${nome} seu IMC é: ${calculo} e sua classificação é: ${classificacao} `
     } else {
-        resultado.textContent = 'Preencha todos os campos'
+        resultado.innerHTML = 'Preencha todos os campos'
     }
 }
 
-calcular.addEventListener('click', imc)
+btnCalcular.addEventListener('click', imc)
+
+// Refresh da Pagina
+const load = document.getElementById('load')
+load.addEventListener('click', function reload() {
+    document.location.reload(true)
+})
