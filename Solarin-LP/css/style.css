@@ -540,3 +540,11 @@ button#meetsform_input_button {
 .creditos a {
     color: #fff;
 }
+
+
+/*animação*/
+
+.ativo {
+    background: #FC5001;
+    color: #ffffff;
+}
